@@ -44,18 +44,10 @@ function alignCenter() {
 }
 
 function justifyText() {
-    const text_area = document.getElementById('text_area');
-    if (text_area) {
-        // Get the selected text
-        const selectedText = document.getSelection().toString();
-
-        // Apply justification to the selected text
-        const justifiedText = `<div style="text-align: justify">${selectedText}</div>`;
-
-        // Replace the selected text with the justified text
-        document.execCommand('insertHTML', false, justifiedText);
-    }
+   
+    document.execCommand("justifyFull", false, null);
 }
+
 function right_align() {
 
     document.execCommand('justifyRight', false, null);
