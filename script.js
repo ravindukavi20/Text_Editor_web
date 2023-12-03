@@ -1,10 +1,14 @@
 
+
 function toggleBold() {
     document.execCommand('bold', false, null);
 }
 function toggleUnderline() {
     document.execCommand('underline', false, null);
 
+}
+function toggleItalic() {
+    document.execCommand('italic', false, null);
 }
  
 //text alignment
