@@ -1,4 +1,8 @@
 
+function toggleBold() {
+    document.execCommand('bold', false, null);
+}
+ 
 //text alignment
 function left_align() {
 

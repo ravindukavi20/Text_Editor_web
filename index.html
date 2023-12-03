@@ -23,6 +23,22 @@
 
     <div class="container_01">
         <div class="toolbar">
+            <button class="bold" onclick="toggleBold()">
+                <img src="Resources/bold-xxl.png" width="28">
+            </button>
+          
+            <button class="left-align" onclick="left_align()">
+              <img src="Resources/left.png" width="30">
+            </button>
+            <button class="center-align" onclick="alignCenter()">
+                <img src="Resources/center.png" width="30">
+            </button>
+            <button class="right-align" onclick="right_align()">
+                <img src="Resources/right.png" width="30">
+            </button>
+            <button class="justify-align" onclick="justifyText()">
+                <img src="Resources/justify.png" width="30">
+            </button>
             
             <button class="undo" onclick="undoText()">
                 <img src="Resources/undo-4-32.png" width="30">
@@ -30,22 +46,8 @@
             <button class="redo" onclick="redoText()">
                 <img src="Resources/action-redo-32.png" width="30">
             </button>
-
                 
-        </div>
-        <button class="left-align" onclick="left_align()">
-            <img src="Resources/left.png" width="30">
-        </button>
-        <button class="center-align" onclick="alignCenter()">
-            <img src="Resources/center.png" width="30">
-        </button>
-        <button class="right-align" onclick="right_align()">
-            <img src="Resources/right.png" width="30">
-        </button>
-        <button class="justify-align" onclick="justifyText()">
-            <img src="Resources/justify.png" width="30">
-        </button>
-        
+        </div> 
 		<div class="text_area" id="text_area" contenteditable="true"></div>
 	</div>
     
