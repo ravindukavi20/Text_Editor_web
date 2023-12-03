@@ -2,6 +2,10 @@
 function toggleBold() {
     document.execCommand('bold', false, null);
 }
+function toggleUnderline() {
+    document.execCommand('underline', false, null);
+
+}
  
 //text alignment
 function left_align() {
