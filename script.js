@@ -44,14 +44,16 @@ function alignCenter() {
 }
 
 function justifyText() {
-    const textArea = document.getElementById('text_area');
-    if (textArea) {
-        const selection = window.getSelection();
-        const range = selection.getRangeAt(0);
+    const text_area = document.getElementById('text_area');
+    if (text_area) {
+        // Get the selected text
+        const selectedText = document.getSelection().toString();
 
-        const div = document.createElement('div');
-        div.style.textAlign = 'justify';
-        range.surroundContents(div);
+        // Apply justification to the selected text
+        const justifiedText = `<div style="text-align: justify">${selectedText}</div>`;
+
+        // Replace the selected text with the justified text
+        document.execCommand('insertHTML', false, justifiedText);
     }
 }
 function right_align() {
